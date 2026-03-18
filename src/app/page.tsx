@@ -6,6 +6,7 @@ import ResultsShowcaseSection from '@/components/ResultsShowcaseSection';
 import MethodologySection from '@/components/MethodologySection';
 import SocialProofSection from '@/components/SocialProofSection';
 import FounderSection from '@/components/FounderSection';
+import TeamSection from '@/components/TeamSection';
 import FinalCTASection from '@/components/FinalCTASection';
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <MethodologySection />
       <SocialProofSection />
       <FounderSection />
+      <TeamSection />
       <FinalCTASection />
     </main>
   );
