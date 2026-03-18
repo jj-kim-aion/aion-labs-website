@@ -25,7 +25,7 @@ const FounderSection: React.FC = () => {
                 
                 <div className="text-center sm:text-left">
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
-                    Nikos Acuna
+                    Nikos Acuna (Head of AI)
                   </h3>
                   <p className="text-sky-300 font-semibold mb-4">
                     Founder & CEO
