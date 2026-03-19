@@ -121,7 +121,7 @@ const EnterpriseTeamSection: React.FC = () => {
                 <div className="mb-6 space-y-2">
                   <div className="flex items-center justify-center text-sm text-enterprise-gray-600">
                     <div className="w-2 h-2 bg-enterprise-gold-400 rounded-full mr-2"></div>
-                    700+ marketing campaigns optimized
+                    1000+ marketing campaigns optimized
                   </div>
                   <div className="flex items-center justify-center text-sm text-enterprise-gray-600">
                     <div className="w-2 h-2 bg-enterprise-gold-400 rounded-full mr-2"></div>
