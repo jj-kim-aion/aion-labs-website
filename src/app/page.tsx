@@ -1,4 +1,4 @@
-import HeroSection from '@/components/HeroSection';
+import EnterpriseHeroSection from '@/components/EnterpriseHeroSection';
 import StatsSection from '@/components/StatsSection';
 import ValuePropositionSection from '@/components/ValuePropositionSection';
 import LeadMagnetSection from '@/components/LeadMagnetSection';
@@ -6,17 +6,14 @@ import ResultsShowcaseSection from '@/components/ResultsShowcaseSection';
 import MethodologySection from '@/components/MethodologySection';
 import SocialProofSection from '@/components/SocialProofSection';
 import FounderSection from '@/components/FounderSection';
-import TeamSection from '@/components/TeamSection';
+import EnterpriseTeamSection from '@/components/EnterpriseTeamSection';
 import FinalCTASection from '@/components/FinalCTASection';
+import '@/styles/enterprise-design-system.css';
 
 export default function Home() {
   return (
     <main>
-      <HeroSection
-        title="The AI Agency of the Future"
-        subtitle="Enterprise AI implementation without the enterprise headaches. We deploy breakthrough AI research into market-leading platforms that drive measurable ROI while your competition is still planning pilots."
-        ctaText="Get Your AI Readiness Assessment"
-      />
+      <EnterpriseHeroSection />
       <StatsSection />
       <ValuePropositionSection />
       <LeadMagnetSection />
@@ -24,7 +21,7 @@ export default function Home() {
       <MethodologySection />
       <SocialProofSection />
       <FounderSection />
-      <TeamSection />
+      <EnterpriseTeamSection />
       <FinalCTASection />
     </main>
   );

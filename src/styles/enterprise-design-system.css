@@ -1,0 +1,309 @@
+/* =============================================================================
+   AION LABS ENTERPRISE DESIGN SYSTEM
+   "Sophisticated Technical Authority" - Chelsea York, CMO Strategic Direction
+   ============================================================================= */
+
+/* CHELSEA'S COLOR PSYCHOLOGY FOR ENTERPRISE TRUST */
+:root {
+  /* Primary: Deep navy/midnight blue (trust, stability) */
+  --enterprise-navy-900: #0a0e1a;
+  --enterprise-navy-800: #1a1f35;
+  --enterprise-navy-700: #2a3055;
+  --enterprise-navy-600: #3a4175;
+  
+  /* Secondary: Crisp whites (clarity, precision) */
+  --enterprise-white: #ffffff;
+  --enterprise-off-white: #fafbfc;
+  --enterprise-light-gray: #f8f9fb;
+  
+  /* Accent: Intelligent gold/amber (premium, innovation) */
+  --enterprise-gold-500: #f59e0b;
+  --enterprise-gold-400: #fbbf24;
+  --enterprise-gold-300: #fcd34d;
+  --enterprise-amber-500: #d97706;
+  
+  /* Supporting: Subtle grays (professional sophistication) */
+  --enterprise-gray-900: #0f172a;
+  --enterprise-gray-800: #1e293b;
+  --enterprise-gray-700: #334155;
+  --enterprise-gray-600: #475569;
+  --enterprise-gray-500: #64748b;
+  --enterprise-gray-400: #94a3b8;
+  --enterprise-gray-300: #cbd5e1;
+  --enterprise-gray-200: #e2e8f0;
+  --enterprise-gray-100: #f1f5f9;
+
+  /* Enterprise Typography Scale */
+  --enterprise-font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --enterprise-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --enterprise-font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  
+  /* Professional Spacing Scale */
+  --enterprise-space-xs: 0.25rem;   /* 4px */
+  --enterprise-space-sm: 0.5rem;    /* 8px */
+  --enterprise-space-md: 1rem;      /* 16px */
+  --enterprise-space-lg: 1.5rem;    /* 24px */
+  --enterprise-space-xl: 2rem;      /* 32px */
+  --enterprise-space-2xl: 3rem;     /* 48px */
+  --enterprise-space-3xl: 4rem;     /* 64px */
+  --enterprise-space-4xl: 6rem;     /* 96px */
+  --enterprise-space-5xl: 8rem;     /* 128px */
+  
+  /* Shadow System for Depth */
+  --enterprise-shadow-sm: 0 1px 2px 0 rgba(10, 14, 26, 0.05);
+  --enterprise-shadow-md: 0 4px 6px -1px rgba(10, 14, 26, 0.1), 0 2px 4px -1px rgba(10, 14, 26, 0.06);
+  --enterprise-shadow-lg: 0 10px 15px -3px rgba(10, 14, 26, 0.1), 0 4px 6px -2px rgba(10, 14, 26, 0.05);
+  --enterprise-shadow-xl: 0 20px 25px -5px rgba(10, 14, 26, 0.1), 0 10px 10px -5px rgba(10, 14, 26, 0.04);
+  
+  /* Professional Border Radius */
+  --enterprise-radius-sm: 0.375rem; /* 6px */
+  --enterprise-radius-md: 0.5rem;   /* 8px */
+  --enterprise-radius-lg: 0.75rem;  /* 12px */
+  --enterprise-radius-xl: 1rem;     /* 16px */
+  --enterprise-radius-2xl: 1.5rem;  /* 24px */
+}
+
+/* BASE TYPOGRAPHY - Chelsea's Authority Weight Strategy */
+.enterprise-heading-hero {
+  font-family: var(--enterprise-font-heading);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--enterprise-navy-900);
+}
+
+.enterprise-heading-xl {
+  font-family: var(--enterprise-font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--enterprise-navy-800);
+}
+
+.enterprise-heading-lg {
+  font-family: var(--enterprise-font-heading);
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: var(--enterprise-navy-800);
+}
+
+.enterprise-heading-md {
+  font-family: var(--enterprise-font-heading);
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--enterprise-navy-700);
+}
+
+.enterprise-subheading {
+  font-family: var(--enterprise-font-body);
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--enterprise-gray-600);
+}
+
+.enterprise-body-lg {
+  font-family: var(--enterprise-font-body);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--enterprise-gray-700);
+}
+
+.enterprise-body {
+  font-family: var(--enterprise-font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--enterprise-gray-600);
+}
+
+/* CHELSEA'S ACCENT COLOR - Intelligent Gold for Premium Feel */
+.enterprise-accent-text {
+  color: var(--enterprise-gold-500);
+}
+
+.enterprise-accent-bg {
+  background-color: var(--enterprise-gold-500);
+}
+
+/* PROFESSIONAL BUTTONS - Enterprise Grade */
+.enterprise-button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--enterprise-space-md) var(--enterprise-space-xl);
+  font-family: var(--enterprise-font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--enterprise-white);
+  background: linear-gradient(135deg, var(--enterprise-navy-700), var(--enterprise-navy-600));
+  border: none;
+  border-radius: var(--enterprise-radius-lg);
+  box-shadow: var(--enterprise-shadow-md);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.enterprise-button-primary:hover {
+  background: linear-gradient(135deg, var(--enterprise-navy-600), var(--enterprise-navy-700));
+  box-shadow: var(--enterprise-shadow-lg);
+  transform: translateY(-1px);
+}
+
+.enterprise-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--enterprise-space-md) var(--enterprise-space-xl);
+  font-family: var(--enterprise-font-heading);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--enterprise-navy-700);
+  background-color: var(--enterprise-white);
+  border: 2px solid var(--enterprise-gray-200);
+  border-radius: var(--enterprise-radius-lg);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.enterprise-button-secondary:hover {
+  border-color: var(--enterprise-navy-300);
+  box-shadow: var(--enterprise-shadow-md);
+  transform: translateY(-1px);
+}
+
+/* SOPHISTICATED CARDS - Chelsea's Professional Feel */
+.enterprise-card {
+  background-color: var(--enterprise-white);
+  border: 1px solid var(--enterprise-gray-200);
+  border-radius: var(--enterprise-radius-xl);
+  box-shadow: var(--enterprise-shadow-sm);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.enterprise-card:hover {
+  box-shadow: var(--enterprise-shadow-lg);
+  transform: translateY(-2px);
+  border-color: var(--enterprise-gray-300);
+}
+
+.enterprise-card-premium {
+  background: linear-gradient(135deg, var(--enterprise-white) 0%, var(--enterprise-off-white) 100%);
+  border: 1px solid var(--enterprise-gold-200);
+  border-radius: var(--enterprise-radius-xl);
+  box-shadow: var(--enterprise-shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.enterprise-card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--enterprise-gold-400), var(--enterprise-amber-500));
+}
+
+/* ENTERPRISE SECTIONS - Authority Layout */
+.enterprise-section {
+  padding: var(--enterprise-space-4xl) 0;
+}
+
+.enterprise-section-hero {
+  padding: var(--enterprise-space-5xl) 0;
+  background: linear-gradient(135deg, var(--enterprise-off-white) 0%, var(--enterprise-white) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.enterprise-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--enterprise-space-lg);
+}
+
+/* SOPHISTICATED ANIMATIONS - Subtle Professional Feel */
+.enterprise-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enterprise-fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE DESIGN - Executive Mobile Experience */
+@media (max-width: 768px) {
+  .enterprise-heading-hero {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+  
+  .enterprise-section {
+    padding: var(--enterprise-space-3xl) 0;
+  }
+  
+  .enterprise-section-hero {
+    padding: var(--enterprise-space-4xl) 0;
+  }
+  
+  .enterprise-container {
+    padding: 0 var(--enterprise-space-md);
+  }
+}
+
+/* TECHNICAL CREDIBILITY ELEMENTS - Monospace Accents */
+.enterprise-technical {
+  font-family: var(--enterprise-font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--enterprise-gray-700);
+  background-color: var(--enterprise-gray-100);
+  padding: var(--enterprise-space-xs) var(--enterprise-space-sm);
+  border-radius: var(--enterprise-radius-sm);
+}
+
+/* STATS DISPLAY - Stripe-inspired Confidence */
+.enterprise-stat-number {
+  font-family: var(--enterprise-font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--enterprise-navy-800);
+  line-height: 1;
+}
+
+.enterprise-stat-label {
+  font-family: var(--enterprise-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--enterprise-gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* PREMIUM GRADIENTS - Subtle Sophistication */
+.enterprise-gradient-text {
+  background: linear-gradient(135deg, var(--enterprise-navy-700), var(--enterprise-gold-500));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+}
+
+.enterprise-gradient-border {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--enterprise-white), var(--enterprise-white)) padding-box,
+              linear-gradient(135deg, var(--enterprise-navy-300), var(--enterprise-gold-300)) border-box;
+}

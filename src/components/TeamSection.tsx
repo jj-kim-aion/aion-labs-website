@@ -86,7 +86,7 @@ const TeamSection: React.FC = () => {
               
               <div className="mb-6">
                 <ul className="space-y-1 text-sm text-slate-300">
-                  <li>• 500+ marketing campaigns optimized</li>
+                  <li>• 700+ marketing campaigns optimized</li>
                   <li>• $7.6M pipeline development</li>
                   <li>• PhD Philosophy + MBA Strategy</li>
                 </ul>
