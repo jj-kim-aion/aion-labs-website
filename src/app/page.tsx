@@ -9,6 +9,7 @@ import FounderSection from '@/components/FounderSection';
 import EnterpriseTeamSection from '@/components/EnterpriseTeamSection';
 import FinalCTASection from '@/components/FinalCTASection';
 import '@/styles/enterprise-design-system.css';
+import '@/styles/premium-ui-enhancements.css';
 
 export default function Home() {
   return (
